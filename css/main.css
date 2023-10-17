@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 800px;
+    margin-left: calc(50% - 400px);
+    background-color: yellow;
+}
+
+/* logo */
+img {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+}
+
+nav {
+}
+
+nav > a {
+    background-color: red;
+}
+
+/* user avatar */
+nav + img {
+    background-color: blue;
+}
