@@ -5,24 +5,42 @@ body {
 header {
     width: 800px;
     margin-left: calc(50% - 400px);
+    margin-top: 20px;
     background-color: yellow;
+    display: inline-block;
 }
 
 /* logo */
-img {
+header > img {
     width: 100px;
     height: 30px;
-    background-color: red;
+    margin-top: 5px;
+    float: left;
+}
+div {
+    float: right;
 }
 
 nav {
+    float: left;
+    margin-top: 10px;
+    margin-right: 30px;
+    
 }
-
-nav > a {
-    background-color: red;
+a {
+    font-size: 20px;
+    line-height: 20px; 
+    margin-right: 30px;
+}
+a:last-child {
+    margin-right: 0;
 }
 
 /* user avatar */
-nav + img {
-    background-color: blue;
+div > img {
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 50%;
 }
+
