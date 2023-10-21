@@ -12,6 +12,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="main-header">
@@ -31,14 +35,14 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-            <h1 class="main-title"> We help you find your dream house </h1>
+            <h1 class="main-title">We help you find your dream home. </h1>
             <form action="">
-                <div>
-                    <button type="button">Buy</button>
-                    <button type="button">Rent</button>
+                <div class="buttons">
+                    <button class="button" type="button">Buy</button>
+                    <button style="color: #717afcfa; background-color: white;" class="button" type="button">Rent</button>
                 </div>
                 <div>
-                    <input type="text" name="" id="">
+                    <input type="text" placeholder="Search for city, Neighborhood, Zip" name="" id="">
                     <button type="submit"></button>
                 </div>
             </form>
@@ -48,72 +52,84 @@
         <section class="neighborhood">
             <div>
                 <h2>Top neighborhood</h2>
-                <p>Top surroungings for your life style</p>
+                <p class="p">Top surroungings for your life style</p>
             </div>
-            <div>
-                <div>
-                    <img src="#" alt="House">
-                    <div>$1862 / Sq. Ft.</div>
-                    <div>
-                        <p>ICON + New York, NY</p>
-                        <p>Carroll Gardens</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="#" alt="House">
-                    <div>$1862 / Sq. Ft.</div>
-                    <div>
-                        <p>ICON + New York, NY</p>
-                        <p>Carroll Gardens</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="#" alt="House">
-                    <div>$1862 / Sq. Ft.</div>
-                    <div>
-                        <p>ICON + New York, NY</p>
-                        <p>Carroll Gardens</p>
-                    </div>
-                </div>
-                <a href="#">See All</a>
-            </div>
-        </section>
+            <div class="all">
 
+                <div style="background-image: url(../img/1.png)" class="house-image-neighborhood">
+                    <!-- <img class="house-image-neighborhood" src="img/1.png" alt="House"> -->
+                    <div class="price-float-right">$1862 / Sq. Ft.</div>
+                    <div class="location">
+                        <p class="state">ICON + New York, NY</p>
+                        <p class="region">Carroll Gardens</p>
+                    </div>
+                </div>
+                <div style="background-image: url(../img/2.png)" class="house-image-neighborhood">
+                    <!-- <img class="house-image-neighborhood" src="img/2.png" alt="House"> -->
+                    <div class="price-float-right">$1862 / Sq. Ft.</div>
+                    <div class="location">
+                        <p class="state">ICON + New York, NY</p>
+                        <p class="region">Carroll Gardens</p>
+                    </div>
+                </div>
+                
+                <div style="background-image: url(../img/3.png)" class="house-image-neighborhood-last">
+                    <!-- <img class="house-image-neighborhood" src="img/3.png" alt="House"> -->
+                        <div class="price-float-right">$1862 / Sq. Ft.</div>
+                        <div style="margin-top: 35px;" class="location">
+                            <p class="state">ICON + New York, NY</p>
+                            <p class="region">Carroll Gardens</p>
+                        </div>
+                        <a class="see-all" href="#">See All</a>
+                    </div>
+                    
+                </div>
+            </div>
+            </section>
+            
         <section class="recomended">
             <div>
                 <h2>Recomended for you</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p">The surroundings are best for your lifestyle</p>
             </div>
-            <div>
-                <div>
-                    <img src="#" alt="House">
-                    <div>
-                        <p>$798,458</p>
-                        <p>121 East 38th Street</p>
-                        <p>Manhatan, NY 10016</p>
+            <div class="recomended-container">
+                <div class="recomended-house">
+                    <img class="recomended-house-img" src="./img/1.png" alt="House">
+                    <div class="recomended-house-details">
+                        <p style="font-weight:600 ;font-size: 14px; padding-bottom: 2px;">$798,458</p>
+                        <p style="font-weight: 500; font-size: 14px; padding-bottom: 2px;">121 East 38th Street</p>
+                        <p style="color: rgba(0, 0, 0, 0.397); font-weight: 300; font-size: 11px; padding-bottom: 5px;">Manhatan, NY 10016</p>
                         <div>
-                            <div>ICON + 2 Baths</div>
-                            <div>ICON + 2 Beds</div>
-                            <div>ICON + 900 sqft</div>
+                            <!-- <div>ICON + 2 Baths</div> -->
+                            <div class="fa fa-bath" style="font-size:11px"> 2 Baths</div>
+                            <div class="fa fa-bed" style="font-size:11px"> 3 Beds</div>
+                            <div class="fa fa-square-o" style="font-size: 11px;"> 1,500 sqft</div>
+                            <!-- <div>ICON + 900 sqft</div> -->
                         </div>
                     </div>
-
-                    <img src="#" alt="House">
-                    <div>
-                        <p>$798,458</p>
-                        <p>121 East 38th Street</p>
-                        <p>Manhatan, NY 10016</p>
-                        <div>
-                            <div>ICON + 2 Baths</div>
-                            <div>ICON + 2 Beds</div>
-                            <div>ICON + 900 sqft</div>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="recomended-container">
+                    <div class="recomended-house">
+                        <img class="recomended-house-img" src="./img/2.png" alt="House">
+                        <div class="recomended-house-details">
+                            <p style="font-weight:600 ;font-size: 14px; padding-bottom: 2px;">$798,458</p>
+                            <p style="font-weight: 500; font-size: 14px; padding-bottom: 2px;">121 East 38th Street</p>
+                            <p style="color: rgba(0, 0, 0, 0.397); font-weight: 300; font-size: 11px; padding-bottom: 5px;">Manhatan, NY 10016</p>
+                            <div>
+                                <!-- <div>ICON + 2 Baths</div> -->
+                                <div class="fa fa-bath" style="font-size:11px"> 1 Baths</div>
+                                <div class="fa fa-bed" style="font-size:11px"> 2 beds</div>
+                                <div class="fa fa-square-o" style="font-size: 11px;"> 900 sqft</div>
+                                <!-- <div>ICON + 900 sqft</div> -->
+                            </div>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
 </body>
 </html>
 
+ <!-- <div>ICON + 2 Baths</div>
+                            <div>ICON + 2 Beds</div>
+                            <div>ICON + 900 sqft</div> -->
